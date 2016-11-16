@@ -25,14 +25,14 @@ public class Rubrica {
 	
 	
 	public Voce getVoceByName(String nome){
-		
+		Voce voce=null;
 		for(Voce voceTemp : listaVoci){
 			
 			if( voceTemp.getNome().equals(nome)){
-				return voceTemp;
+				voce=voceTemp;
 			}	
 		}
-		return null;
+		return voce;
 	}
 	
 	
