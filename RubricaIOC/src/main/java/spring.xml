@@ -1,3 +1,67 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN" 
 "http://www.springframework.org/dtd/spring-beans-2.0.dtd">
+
+
+
+<!--     creazione del bean /  -->
+
+<beans>
+   <bean id="rubrica"   class="it.alfasoft.rossella.Rubrica"> 
+        
+         <property name="lista">
+         
+	         <list>
+		        <ref bean="voce1"/>
+		       	<ref bean="voce2"/>
+		        <ref bean="voce3"/>
+	         
+	         </list>
+         
+         </property>                
+   </bean>
+   
+   <bean id="voce1"   class="it.alfasoft.rossella.Voce">
+
+            
+
+               <property name="nome" value="Martina"></property>
+
+               <property name="cognome" value="DeMartini"></property>
+
+               <property name="telefono" value="3401785145"></property>
+
+          
+
+     </bean>
+    <bean id="voce2"   class="it.alfasoft.rossella.Voce">
+
+            
+
+               <property name="nome" value="Gino"></property>
+
+               <property name="cognome" value="Laneri"></property>
+
+               <property name="telefono" value="3495874123"></property>
+
+          
+
+     </bean> 
+     <bean id="voce3"   class="it.alfasoft.rossella.Voce">
+
+            
+
+               <property name="nome" value="Fra"></property>
+
+               <property name="cognome" value="Ecco"></property>
+
+               <property name="telefono" value="34789652215"></property>
+
+          
+
+     </bean>
+     
+     
+     
+     
+  </beans> 
