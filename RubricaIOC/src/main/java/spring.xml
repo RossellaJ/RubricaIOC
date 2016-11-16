@@ -9,7 +9,7 @@
 <beans>
    <bean id="rubrica"   class="it.alfasoft.rossella.Rubrica"> 
         
-         <property name="lista">
+         <property name="listaVoci">
          
 	         <list>
 		        <ref bean="voce1"/>
